@@ -56,6 +56,14 @@ curl localhost:8083/api/tutorials
 ```
 ## Deploy the Docker Image on IBM Code Engine
 
+### Create a Secret in the Code Engine project
+Create a secret with the following names
+  - DB_USER
+  - DB_PASSWORD
+  - DB_URL
+
+Use the values from PostgreSQL page from IBM Cloud.
+
 ### Create a new Application inside the CE project
 1. From your own CE project, click on `Applications` link
 1. Click `Create` button
