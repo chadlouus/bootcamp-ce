@@ -3,6 +3,13 @@
 ```
 git clone https://github.com/chadlouus/carbon-react-admin.git
 ```
+Review the following pages in the application to get a feeling for how the application is composed of.
+
+1. the App page - client/src/components/Admin/index.jsx
+2. the main page for the right-hand side - client/src/components/resources/MainPage/index.js
+3. for dataProvider - https://jsonplaceholder.typicode.com/
+4. the menu page for Posts and Photos - client/src/components/Admin/menuList.js
+
 ## Run a local build
 Building a Local Docker Image
 ```sh
@@ -17,6 +24,8 @@ Verify the following URLs on a browser, where `IP_ADDRESS` is the ip address of 
 
 After verifying, press Ctrl-C to stop the container.
 
+## Create a Container Registry Namespace
+
 ## Deploy the Docker Image on IBM Code Engine
 
 ### Create a new Application inside the CE project
@@ -24,7 +33,7 @@ After verifying, press Ctrl-C to stop the container.
 1. Click `Create` button
 1. Enter the name of `carbon-react-admin`
 1. Accept the default Container image selection
-1. Under `Image reference`, enter `websphere-liberty`
+1. Under `Image reference`, enter `private.us.icr.io/ce-bootcamp-us-dev00`
 1. For `Listening port`, enter `7001`
 7. For `CPU and memory`, select `0.125 vCPU / 0.25 GB`
 8. Accept the default values for other fields, and click on `Create` button
