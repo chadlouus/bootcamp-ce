@@ -3,7 +3,10 @@
 ```
 docker run --rm -p 9080:9080 websphere-liberty
 ```
-Verify http://localhost:9080 on a browser
+Verify the following URLs on a browser, where `IP_ADDRESS` is the ip address of your VM
+1. http://IP_ADDRESS:9080
+2. http://IP_ADDRESS:9080/health
+3. http://IP_ADDRESS:9080/openapi
 
 After verifying, press Ctrl-C to stop the container.
 
@@ -27,3 +30,4 @@ Create a new Code Engine Project by the name of `CE-bootcamp-devN` where N is yo
 1. Click on `Test application` button
 2. Click on `Application URL`
 3. Verify that the Websphere-Liberty application is deployed on IBM Code Engine
+4. Verify the /health and /openapi endpoints
