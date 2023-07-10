@@ -3,7 +3,7 @@
 ```
 docker run --rm -p 9080:9080 websphere-liberty
 ```
-Verify the following URLs on a browser, where `IP_ADDRESS` is the ip address of your VM
+Verify the following URLs on a browser, where `IP_ADDRESS` is the ip address of your VM, or use `localhost` if you are not using a VM
 1. http://IP_ADDRESS:9080
 2. http://IP_ADDRESS:9080/health
 3. http://IP_ADDRESS:9080/openapi
