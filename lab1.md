@@ -30,4 +30,4 @@ Create a new Code Engine Project by the name of `CE-bootcamp-devN` where N is yo
 1. Click on `Test application` button
 2. Click on `Application URL`
 3. Verify that the Websphere-Liberty application is deployed on IBM Code Engine
-4. Verify the /health and /openapi endpoints
+4. Verify the `/health` and `/openapi` endpoints
