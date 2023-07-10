@@ -25,6 +25,12 @@ Verify the following URLs on a browser, where `IP_ADDRESS` is the ip address of 
 After verifying, press Ctrl-C to stop the container.
 
 ## Create a Container Registry Namespace
+1. Click on the Hamburger menu in IBM Cloud Console
+1. Scroll down the side bar menu, and select `Container Registry`, then `Namespaces`
+1. Make sure the `Location` shows the closest region to you, such as "Dallas" or "Sao Paulo"
+1. Click on the `Create` button
+2. Enter a name of `cr-bootcamp-devN` where N is your assigned developer number, such as dev3
+3. Click on `Create` button to create the namespace
 
 ## Deploy the Docker Image on IBM Code Engine
 
@@ -33,7 +39,7 @@ After verifying, press Ctrl-C to stop the container.
 1. Click `Create` button
 1. Enter the name of `carbon-react-admin`
 1. Accept the default Container image selection
-1. Under `Image reference`, enter `private.us.icr.io/ce-bootcamp-us-dev00`
+1. Under `Image reference`, enter `private.us.icr.io/ce-bootcamp-us-devN`, where `N` is your assigned developer number, such as 3
 1. For `Listening port`, enter `7001`
 7. For `CPU and memory`, select `0.125 vCPU / 0.25 GB`
 8. Accept the default values for other fields, and click on `Create` button
